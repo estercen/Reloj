@@ -1,20 +1,24 @@
-// JavaScript Document
+// JQuery Document
 
+$(function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec;
+    var time = setTimeout(function(){ startTime() }, 500);
 
-
-$(function(){
-	//$("div").append("Pepito");
-	//$("div").prepend("Ey,");
-	
-	//$("section").before("<header>Título</header>");
-	//$("section").after("<footer>Pie de pág.</footer>");
-	
-	
-	let imagenes= ["nube.jpg", "nube.jpg", "nube.jpg", "nube.jpg", "nube.jpg", "nube.jpg"]; 
-	//$("img").append("nube.jpg" "nube.jpg" "nube.jpg" "nube.jpg" "nube.jpg" "nube.jpg");
-	
-	for(i=0; i<=imagenes.length; i++){
-		
-		}
 });
-	
+
+
+
+/*This puts a 0 in front of numbers in a unit*/
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
