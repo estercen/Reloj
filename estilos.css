@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	width:100%;
+	height:100%;
+	padding-top: 20vh;
+	font-family: 'Staatliches', cursive;
+	font-size: 9vh;
+	/*background-color: black;*/
+	color:black;
+	display: flex;
+	justify-content: center;
+	text-shadow: -0.06em 0 red,  0.06em 0 cyan; 
+	/* This creates the 3D effect */
+  	letter-spacing: 0.05em;
+ 	/* make sure the letters don't overlap */
+}
+
+/*MEDIA querys */	
+	
+@media	(min-width:320px){
+
+#clockdate{
+	position: absolute;
+	left: 13%;
+	text-align:center;
+	width: 300px;
+	border:2vw solid black /*white*/;
+	box-shadow:-0.06em 0 red,  0.06em 0 cyan; 
+	padding-left:8px;
+	margin-top:8px;
+	border-radius:5px;
+}
+
+@media	(min-width:992px){
+
+#clockdate{
+	position: absolute;
+	left: 35%;
+	text-align:center;
+	width: 400px;
+	border:0.8vw solid black /*white*/;
+	padding-left:10px;
+	margin-top:8px;
+	border-radius:5px;
+}
+}
+
+}
