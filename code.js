@@ -1,3 +1,4 @@
+
 // JQuery Document
 
 $(function startTime() {
@@ -22,3 +23,4 @@ function checkTime(i) {
     }
     return i;
 }
+
